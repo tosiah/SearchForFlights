@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Search for flights</title>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <script src="{{ url_for('static', filename='myscript.js')}}"></script>
+    </head>
+    <body>
+        <h2>Search for flights</h2>
+
+        <form id="form">
+            <input id="flight_id" type="text" placeholder="Id of a flight">
+            <input type="submit">
+        </form>
+        <div id="result"></div>
+        <ul id="flightDetails"></ul>
+    </body>
+</html>

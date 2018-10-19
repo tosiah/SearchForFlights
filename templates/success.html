@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Success
+{% endblock %}
+
+{% block body %}
+    <h1>Success</h1>
+
+    You have successfully booked your flight
+
+    <a href="{{url_for('index')}}"><button class="back">Back to home page</button></a>
+    <a href="{{url_for('flight', flight_id=flight_id)}}"><button class="back">Show all passengers for this flight</button></a>
+{% endblock %}

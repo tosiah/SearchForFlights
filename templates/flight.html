@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Flights
+{% endblock %}
+
+{% block body %}
+<h1>Passengers</h1>
+
+    <div class="form-group">
+        Passengers of flight from {{flight.origin}} to {{flight.destination}} :
+        <ul>
+        {% for passenger in passengers %}
+            <li>{{passenger.name}}</li>
+        {% endfor %}
+            
+        </ul>
+    </div>
+{% endblock %}
